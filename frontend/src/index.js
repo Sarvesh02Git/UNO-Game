@@ -4,7 +4,7 @@ import App from './App'
 // @ts-ignore: side-effect import of CSS
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
