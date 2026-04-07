@@ -1,8 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { GameState, WSMessage } from './types';
 
-const WS_BASE = 'ws://localhost:8000/ws';
-const API_BASE = 'http://localhost:8000';
+// const WS_BASE = 'ws://localhost:8000/ws';
+// const API_BASE = 'http://localhost:8000';
+
+const WS_BASE = 'wss://uno-game-3.onrender.com/ws'
+const API_BASE = 'https://uno-game-3.onrender.com'
 
 export function useUNOGame() {
   const wsRef = useRef<WebSocket | null>(null);
